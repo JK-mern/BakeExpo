@@ -9,7 +9,7 @@ interface HeroProps {
 export function Hero({onTicketClick} : HeroProps) {
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-white flex justify-center items-center max-w-[96rem] mx-auto ">
+    <div className="relative min-h-screen overflow-hidden bg-transparent flex justify-center items-center max-w-[96rem] mx-auto ">
       <div className="flex flex-row justify-between items-center w-full">
 
       <motion.div
@@ -20,7 +20,7 @@ export function Hero({onTicketClick} : HeroProps) {
       >
         <motion.h1
           variants={fadeInUp}
-          className="text-center sm:text-left text-4xl  sm:text-6xl font-bold text-gray-900 mb-8"
+          className="text-center sm:text-left text-4xl  sm:text-8xl font-bold text-gray-900 mb-8"
         >
           BAKE EXPO
     

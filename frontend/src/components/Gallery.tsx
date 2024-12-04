@@ -10,7 +10,7 @@ function Gallery() {
    
   ];
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-transparent py-24">
     <motion.div
       variants={staggerContainer}
       initial="initial"

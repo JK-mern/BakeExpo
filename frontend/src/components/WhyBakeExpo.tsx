@@ -26,7 +26,7 @@ const WhyExhibit = ({ onTicketClick }: ExibitProps)=>{
   ];
 
   return (
-    <section className="bg-white py-16 px-4">
+    <section className="bg-transparent py-16 px-4">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
