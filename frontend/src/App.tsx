@@ -16,7 +16,7 @@ function App() {
     setIsBookingFormOpen(true)
   }
   return (
-    <div className="">
+    <div className="font-inter">
       <Navbar  onTicketClick = {handleopenBookingForm}/>
       <Hero  onTicketClick = {handleopenBookingForm}/>
       <About />
