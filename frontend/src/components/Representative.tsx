@@ -51,7 +51,7 @@ export function Representatives() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {representatives.map((rep, index) => (
             <motion.div
-              key={rep.name}
+              key={index}
               variants={scaleIn}
               className="bg-white rounded-xl shadow-sm overflow-hidden group hover:shadow-md transition-shadow"
             >
