@@ -13,13 +13,13 @@ function Navbar({onTicketClick} : NavbarProps) {
     >
       <div className="flex justify-between  items-center container mx-auto">
         <div>
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-xl sm:text-3xl font-bold">
             Bake <span className="text-violet-600">Expo</span>
           </h2>
         </div>
         <div className="flex gap-6  items-center ">
-          <ul className="text-lg">Home</ul>
-          <ul className="text-lg">About Us</ul>
+          <ul className="text-lg hidden sm:block">Home</ul>
+          <ul className="text-lg hidden sm:block">About Us</ul>
           <button className="p-4 bg-violet-600 text-white rounded-lg cursor-pointer hover:bg-violet-400" onClick={onTicketClick}>
             Book Ticket
           </button>

@@ -9,7 +9,7 @@ export function About() {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8"
       >
         <motion.div variants={fadeInUp} className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">

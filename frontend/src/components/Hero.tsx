@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import { fadeInUp, staggerContainer } from "./animations";
 
-
 interface HeroProps {
   onTicketClick : () => void
 }
@@ -10,27 +9,27 @@ interface HeroProps {
 export function Hero({onTicketClick} : HeroProps) {
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-white flex justify-center items-center">
+    <div className="relative min-h-screen overflow-hidden bg-white flex justify-center items-center max-w-[96rem] mx-auto ">
       <div className="flex flex-row justify-between items-center w-full">
 
       <motion.div
         variants={staggerContainer}
         initial="initial"
         animate="animate"
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10 text-center"
+        className=" lg:w-1/2  mx-auto px-4 sm:px-6 lg:px-8  pt-40 sm:pt-20  pb-10 text-center"
       >
         <motion.h1
           variants={fadeInUp}
-          className="text-5xl sm:text-7xl font-bold text-gray-900 mb-8"
+          className="text-center sm:text-left text-4xl  sm:text-6xl font-bold text-gray-900 mb-8"
         >
-          Elevate Your
-          <br />
-          <span className="text-primary-600">Baking Journey</span>
+          BAKE EXPO
+    
+          <span className="text-primary-600">{" "}2025</span>
         </motion.h1>
 
         <motion.p
           variants={fadeInUp}
-          className="max-w-2xl mx-auto text-xl text-gray-600 mb-10"
+          className="max-w-2xl text-justify mx-auto -ml-0 text-xl text-gray-600 mb-10"
         >
           Join us for an extraordinary culinary experience where passion meets
           expertise. Book your slot now for exclusive masterclasses and
@@ -39,7 +38,7 @@ export function Hero({onTicketClick} : HeroProps) {
 
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+          className="flex flex-col sm:flex-row gap-4  mb-12"
         >
           <button className="flex items-center justify-center gap-2 bg-violet-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 text-lg group" onClick={onTicketClick}>
             Book Your Slot
@@ -52,7 +51,7 @@ export function Hero({onTicketClick} : HeroProps) {
 
         <motion.div
           variants={fadeInUp}
-          className="flex flex-col sm:flex-row justify-center items-center gap-8 text-lg text-gray-600"
+          className="flex flex-col sm:flex-row items-center gap-8 text-lg text-gray-600"
         >
           <div className="flex items-center gap-2">
             <Calendar className="text-primary-600" />
@@ -64,11 +63,11 @@ export function Hero({onTicketClick} : HeroProps) {
           </div>
         </motion.div>
       </motion.div>
-      <div className="">
-        <video src="" loop >
-
+      <motion.div  initial = {{opacity : 0, y:80}} animate = {{opacity:1, y:0}} transition={{duration : 0.9}} className="w-1/2 lg:block hidden">
+        <video className="w-full object-contain" loop autoPlay muted>
+        <source src="../assets/video/assembly-line.webm" type="video/webm" />
         </video>
-      </div>
+      </motion.div>
       </div>
     </div>
   );
