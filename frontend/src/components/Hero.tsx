@@ -64,8 +64,8 @@ export function Hero({onTicketClick} : HeroProps) {
         </motion.div>
       </motion.div>
       <motion.div  initial = {{opacity : 0, y:80}} animate = {{opacity:1, y:0}} transition={{duration : 0.9}} className="w-1/2 lg:block hidden">
-        <video className="w-full object-contain" loop autoPlay muted>
-        <source src="../assets/video/assembly-line.webm" type="video/webm" />
+        <video className="w-full object-contain" loop autoPlay muted poster="../assets/video/AssemblyLinePosterpreview.png">
+        <source src="https://bakeexpo.azureedge.net/videos/expohero.webm" type="video/webm" />
         </video>
       </motion.div>
       </div>
