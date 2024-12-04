@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar"
 import { Representatives } from "./components/Representative"
 import { BookingForm } from "./components/BookForm"
 import WhyExhibit from "./components/WhyBakeExpo"
-import { MyBentoGrid } from "./components/MyBentoGrid"
+
 
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
   }
   return (
     <div
-    className=" h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
-    <div className="font-inter">
+    className="font-sans ">
+ 
       <Navbar  onTicketClick = {handleopenBookingForm}/>
       <Hero  onTicketClick = {handleopenBookingForm}/>
       <About />
@@ -27,7 +27,7 @@ function App() {
       <WhyExhibit onTicketClick = {handleopenBookingForm}/>
       <BookingForm isOpen = {isBookingFormOpen} onClose={ ()=> setIsBookingFormOpen(false) } />
       <Gallery />
-      <MyBentoGrid/> 
+
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['"Inter"', 'serif'], // Custom font utility
+        sans: ['DM Sans', 'sans-serif'],
       },
     },
   },

@@ -99,7 +99,7 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className=" rounded-xl shadow-xl max-w-md w-full p-6 relative"
+            className=" rounded-xl shadow-xl max-w-md w-full p-6 relative bg-white"
           >
             <button
               onClick={onClose}
@@ -112,7 +112,7 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
               Book Your Slot
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4 ">
               {["CompanyName", "FirstName", "LastName", "Designation", "WhastappNo", "PhoneNumber", "Address", "Email"].map((field) => (
                 <div key={field}>
                   <label
