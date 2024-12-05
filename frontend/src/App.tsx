@@ -21,7 +21,7 @@ function App() {
     className="font-sans ">
  
       <Navbar  onTicketClick = {handleopenBookingForm}/>
-      <Hero  onTicketClick = {handleopenBookingForm}/>
+      <Hero  />
       <About />
       <Representatives />
       <WhyExhibit onTicketClick = {handleopenBookingForm}/>
