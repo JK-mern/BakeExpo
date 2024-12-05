@@ -8,6 +8,7 @@ import { BookingForm } from "./components/BookForm"
 import WhyExhibit from "./components/WhyBakeExpo"
 
 
+
 function App() {
 
   const [isBookingFormOpen, setIsBookingFormOpen] = useState (false)
@@ -16,7 +17,9 @@ function App() {
     setIsBookingFormOpen(true)
   }
   return (
-    <div className="">
+    <div
+    className="font-sans ">
+ 
       <Navbar  onTicketClick = {handleopenBookingForm}/>
       <Hero  onTicketClick = {handleopenBookingForm}/>
       <About />
@@ -24,6 +27,7 @@ function App() {
       <WhyExhibit onTicketClick = {handleopenBookingForm}/>
       <BookingForm isOpen = {isBookingFormOpen} onClose={ ()=> setIsBookingFormOpen(false) } />
       <Gallery />
+
     </div>
   )
 }

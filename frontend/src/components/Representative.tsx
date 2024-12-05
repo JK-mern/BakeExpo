@@ -31,7 +31,7 @@ const representatives = [
 
 export function Representatives() {
   return (
-    <div className="bg-white py-24">
+    <div className="bg-transparent py-24">
       <motion.div 
         variants={staggerContainer}
         initial="initial"
@@ -53,7 +53,7 @@ export function Representatives() {
             <motion.div
               key={index}
               variants={scaleIn}
-              className="bg-white rounded-xl shadow-sm overflow-hidden group hover:shadow-md transition-shadow"
+              className="bg-transparent rounded-xl shadow-sm overflow-hidden group hover:shadow-md transition-shadow"
             >
               <div className="aspect-w-1 aspect-h-1 relative overflow-hidden">
                 <img 
