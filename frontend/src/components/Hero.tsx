@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import { Calendar, MapPin, ArrowRight, Map } from "lucide-react";
-import { fadeInUp, staggerContainer } from "./animations";
 
-interface HeroProps {
-  onTicketClick: () => void
-}
 
-export function Hero({ onTicketClick }: HeroProps) {
+// interface HeroProps {
+//   onTicketClick: () => void
+// }
+
+import { MapPin } from "lucide-react";
+
+export function Hero() {
 
   return (
 

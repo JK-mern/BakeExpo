@@ -1,15 +1,13 @@
-import { motion } from "motion/react";
-import { fadeInUp, staggerContainer } from "./animations";
 import "./Gallery.css";
 
 function Gallery() {
-  const images = [
-    "../assets/Expo/ExpoImage1.JPG",
-    "../assets/Expo/ExpoImage2.JPG",
-    "../assets/Expo/ExpoImage3.JPG",
-    "../assets/Expo/ExpoImage4.JPG",
+  // const images = [
+  //   "../assets/Expo/ExpoImage1.JPG",
+  //   "../assets/Expo/ExpoImage2.JPG",
+  //   "../assets/Expo/ExpoImage3.JPG",
+  //   "../assets/Expo/ExpoImage4.JPG",
    
-  ];
+  // ];
   return (
 
 
